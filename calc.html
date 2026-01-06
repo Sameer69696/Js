@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <p>
+            Calculator
+        </p>
+
+        <button onclick="
+        showVal += '1';
+        showVal -= '1';
+        showVal *= '1';
+        showVal /= '1';
+        console.log(showVal);
+        ">
+            1
+        </button>
+
+        <button onclick="
+        showVal += 2;
+        showVal -= 2;
+        showVal *= 2;
+        showVal /= 2;
+        console.log(showVal);
+        ">
+            2
+        </button>
+
+        <button onclick="
+        showVal += 3;
+        showVal -= 3;
+        showVal *= 3;
+        showVal /= 3;
+        console.log(showVal);
+        ">
+            3
+        </button>
+
+        <button onclick="
+        firstNum = showVal;
+        operator = '+';
+        console.log(operator= '+');
+        ">
+            +
+        </button>
+
+        <button onclick="
+        firstNum = showVal;
+        operator = '-';
+        console.log(operator= '-');
+        ">
+            -
+        </button>
+
+        <button onclick="
+        firstNum = showVal;
+        operator = '*';
+        console.log(operator= '*');
+        ">
+            *
+        </button>
+
+        <button onclick="
+        firstNum = showVal;
+        operator = '/';
+        console.log(operator= '/');
+        ">
+            /
+        </button>
+
+        <button onclick="
+        secondNumber = Number(displayValue);
+        let result;
+        
+        if (operator === '+') {
+        result = firstNumber + secondNumber;
+        }
+    
+        console.log(`Result: ${result}`);
+        displayValue = result.toString();
+        ">
+            =
+        </button>
+
+        <button onclick="
+        displayValue = '';
+        firstNumber = null;
+        secondNumber = null;
+        operator = '';
+        console.log('Cleared.');
+        ">
+            clear
+        </button>
+
+        <script>
+            let showVal = '';
+            let firstNum = null;
+            let secondNum = null;
+            let operator = '';
+        </script>
+    </body>
+</html>
